@@ -42,14 +42,9 @@ int dirlight() {
 }
 
 void defineLights() {
-  pointLight(pointlight(), 0, 50,   // Color
-             200, -150, 0); // Position
+  pointLight(pointlight(), 0, 50, 200, -150, 0);
 
-  directionalLight(50, 0, dirlight(), // Color
-                   1, 0, 0);    // The x-, y-, z-axis direction
+  directionalLight(50, 0, dirlight(), 1, 0, 0);    
                    
-  spotLight(180, 180, 0,  // Color
-            0, 30, 180,     // Position
-            0, -0.4, -0.4,  // Direction
-            PI / 3, 3);     // Angle, concentration
+  spotLight(180, 180, 0, 0, 30, 180, 0, -0.4, -0.4, PI / 3, 3);
 }
